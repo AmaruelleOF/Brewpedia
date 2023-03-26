@@ -38,8 +38,8 @@
 
     <div class="container body-content">
         {{!base}}
-        <hr />
-        <footer>
+        <hr/>
+        <footer class="footer-main">
             <p>&copy; {{ year }} - Brewpedia</p>
         </footer>
     </div>
