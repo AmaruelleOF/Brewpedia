@@ -13,11 +13,11 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-main-article" href="#">Brewpedia</a>
+    <a class="navbar-main-article" href="/">Brewpedia</a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="navbar-item" aria-current="page" href="#">Articles</a>
+          <a class="navbar-item" aria-current="page" href="/articles">Articles</a>
         </li>
         <li class="nav-item">
           <a class="navbar-item" href="#">Brewing Methods</a>
