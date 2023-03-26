@@ -1,6 +1,6 @@
 % rebase('layout.tpl', title=title, year=year)
 
-<div class="flex-cards" >
+<div class="flex-cards">
 
 <div class="card" style="width: 18rem;">
   <div class="card-body">
