@@ -2,12 +2,11 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
     font-family: 'Georgia', serif!important;
+    background-color: #FFF7F2!important;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
     font-family: 'Georgia', serif!important;
 }
 
@@ -74,6 +73,29 @@ a:hover {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+}
+
+.hero {
+    height: 100vh!important;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    background-image: url("/static/images/BG Blob.svg");
+    padding: 4rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.heading-coffee {
+    max-height: 100%;
+    max-width: 30%;
+    color: #663613!important;
+    font-weight: bold;
+    margin-top: 4rem;
+    text-shadow: 1px 5px 5px rgba(0,0,0,.3);
 }
 
 .flex-cards{
