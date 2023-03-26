@@ -45,6 +45,35 @@ input[type="checkbox"].input-validation-error {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', serif!important;
 }
+.navbar-main-article {
+  float: left;
+  margin-right: 2.5rem;
+  padding: 15px 15px;
+  font-size: 30px;
+  line-height: 20px;
+  color: #FFA500;
+  font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: #FFA500;
+    padding: 2px;
+   }
+a:hover {
+    text-decoration: none;
+    color: #cc7a00;
+   }
+.navbar-item {
+  color: #000000;
+  margin-bottom: -1px;
+  margin-right: 2.5rem;
+  font-style: italic;
+  font-size: 20px;
+  background: none;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
 
 .hero {
     height: 100vh!important;
