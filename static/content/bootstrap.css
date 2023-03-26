@@ -52,12 +52,13 @@ audio:not([controls]) {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Georgia', serif!important;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 body {
+  'Georgia', serif!important
   margin: 0;
 }
 
@@ -311,7 +312,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Georgia', serif!important;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -473,7 +474,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Georgia', serif!important;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -6125,7 +6126,7 @@ body.modal-open,
   height: 20px;
   margin-top: -10px;
   margin-left: -10px;
-  font-family: serif;
+  font-family: 'Georgia', serif!important;
 }
 
 .carousel-control .icon-prev:before {

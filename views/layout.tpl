@@ -18,7 +18,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Application name</a>
+                <a href="/" class="navbar-brand">Brewpedia</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -34,7 +34,7 @@
         {{!base}}
         <hr />
         <footer>
-            <p>&copy; {{ year }} - My Bottle Application</p>
+            <p>&copy; {{ year }} - Brewpedia</p>
         </footer>
     </div>
 
