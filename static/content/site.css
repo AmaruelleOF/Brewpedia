@@ -1,5 +1,4 @@
 body {
-    padding-bottom: 20px;
     font-family: 'Georgia', serif!important;
     background-color: #FFF7F2!important;
 }
@@ -112,4 +111,21 @@ a:hover {
 
 .bg-light {
     background: #fff !important;
+}
+
+.footer-main {
+    margin-top: 2rem;
+    background: #663613!important;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1rem;
+    color: #F5DEB3;
+    box-shadow: 0 -5px 10px rgba(0,0,0,.2);
+    border: solid 1px #8d4b1c;
+}
+
+hr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: solid 1pt #663613;
 }
