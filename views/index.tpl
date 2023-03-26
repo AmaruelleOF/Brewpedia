@@ -1,3 +1,6 @@
-% rebase('layout.tpl', title='Home Page', year=year)
+% rebase('layout.tpl', title='Welcome to The World of Coffee', year=year)
 
-<svg>
+<div class="hero">
+    <h1 class="heading-coffee">Unlock the World of Coffee</h1>
+    <button type="button" class="btn btn-primary">Explore Now</button>
+</div>
