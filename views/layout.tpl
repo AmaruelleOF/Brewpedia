@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; top: 0; width: 100%; box-shadow: 0 2px 3px rgba(0,0,0,.1);">
   <div class="container-fluid">
     <a class="navbar-main-article" href="/">Brewpedia</a>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -36,7 +36,7 @@
   </div>
 </nav>
 
-    <div class="container body-content">
+    <div class="container body-content" style="margin-top: 6rem;">
         {{!base}}
         <hr/>
         <footer class="footer-main">
