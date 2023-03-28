@@ -33,3 +33,13 @@ def articles():
         title='Articles',
         year=datetime.now().year
     )
+
+
+@route('/brewing')
+@view('brewing')
+def brewing():
+    return dict(
+        title="Brewing",
+        year=datetime.now().year
+    )
+

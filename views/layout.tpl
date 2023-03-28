@@ -20,7 +20,7 @@
           <a class="navbar-item" aria-current="page" href="/articles">Articles</a>
         </li>
         <li class="nav-item">
-          <a class="navbar-item" href="#">Brewing Methods</a>
+          <a class="navbar-item" href="/brewing">Brewing Methods</a>
         </li>
         <li class="nav-item">
           <a class="navbar-item" href="#">Coffee Beans</a>
