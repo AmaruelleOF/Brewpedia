@@ -47,7 +47,16 @@ def brewing():
 @route('/beans')
 @view('beans')
 def beans():
-    return  dict(
+    return dict(
         title="beans",
+        year=datetime.now().year
+    )
+
+
+@route('/roasting')
+@view('roasting')
+def roasting():
+    return dict(
+        title="roasting",
         year=datetime.now().year
     )

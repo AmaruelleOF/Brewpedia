@@ -26,7 +26,7 @@
           <a class="navbar-item" href="/beans">Coffee Beans</a>
         </li>
         <li class="nav-item">
-          <a class="navbar-item" href="#">Roasting</a>
+          <a class="navbar-item" href="/roasting">Roasting</a>
         </li>
           <li class="nav-item">
           <a class="navbar-item" href="#">Resources</a>
