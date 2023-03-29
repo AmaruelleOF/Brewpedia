@@ -43,3 +43,11 @@ def brewing():
         year=datetime.now().year
     )
 
+
+@route('/beans')
+@view('beans')
+def beans():
+    return  dict(
+        title="beans",
+        year=datetime.now().year
+    )

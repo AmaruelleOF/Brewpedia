@@ -1,4 +1,4 @@
-% rebase('layout.tpl', title=title, year=year)
+% rebase('layout.tpl', title="Brewing Methods", year=year)
 
 </style>
 
@@ -10,23 +10,15 @@
 
     <header>
 
-        <div class="cover-img" style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb'); display: block; object-fit: fill; height: 300px; object-fit: fill; background-position: center center;">
-
+        <div class="cover-img" style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb'); display: block; object-fit: fill; height: 300px; object-fit: fill; background-position: 30% 40%;">
         </div>
 
-        <div class="page-header-icon page-header-icon-with-cover">
-
-            <span class="icon">
-☕</span>
-
-        </div>
-
-        <h1 class="page-title">
+        <h1 class="page-title" style="margin: 1rem;">
 Brewing Methods</h1>
 
     </header>
 
-    <div class="page-body">
+    <div class="p-text" style="margin: 2rem;">
 
         <p class="">
 If you&#x27;re a coffee or tea lover, you know that the way you brew your drink can significantly impact its flavor and aroma. In this article, we&#x27;ll explore various brewing methods and the techniques used to make the perfect cup of coffee or tea.</p>

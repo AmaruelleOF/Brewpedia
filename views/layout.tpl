@@ -23,7 +23,7 @@
           <a class="navbar-item" href="/brewing">Brewing Methods</a>
         </li>
         <li class="nav-item">
-          <a class="navbar-item" href="#">Coffee Beans</a>
+          <a class="navbar-item" href="/beans">Coffee Beans</a>
         </li>
         <li class="nav-item">
           <a class="navbar-item" href="#">Roasting</a>
