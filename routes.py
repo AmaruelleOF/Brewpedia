@@ -60,3 +60,57 @@ def roasting():
         title="roasting",
         year=datetime.now().year
     )
+
+
+@route('/history-page')
+@view('history-page')
+def roasting():
+    return dict(
+        title="history-page",
+        year=datetime.now().year
+    )
+
+
+@route('/varieties-coffee')
+@view('varieties-coffee')
+def roasting():
+    return dict(
+        title="varieties-coffee",
+        year=datetime.now().year
+    )
+
+
+@route('/how-to-choose-coffee')
+@view('how-to-choose-coffee')
+def roasting():
+    return dict(
+        title="how-to-choose-coffee",
+        year=datetime.now().year
+    )
+
+
+@route('/making-coffee-at-home')
+@view('making-coffee-at-home')
+def roasting():
+    return dict(
+        title="making-coffee-at-home",
+        year=datetime.now().year
+    )
+
+
+@route('/the-benefits-of-drinking-coffee')
+@view('the-benefits-of-drinking-coffee')
+def roasting():
+    return dict(
+        title="the-benefits-of-drinking-coffee",
+        year=datetime.now().year
+    )
+
+
+@route('/coffee-and-health')
+@view('coffee-and-health')
+def roasting():
+    return dict(
+        title="coffee-and-health",
+        year=datetime.now().year
+    )
