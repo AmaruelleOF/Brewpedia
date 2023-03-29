@@ -482,4 +482,8 @@ progress {
   display: none !important;
 }
 
+.page-body {
+    margin: 3rem !important;
+}
+
 /*# sourceMappingURL=bootstrap-reboot.css.map */

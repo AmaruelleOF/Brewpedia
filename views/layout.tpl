@@ -29,7 +29,7 @@
           <a class="navbar-item" href="/roasting">Roasting</a>
         </li>
           <li class="nav-item">
-          <a class="navbar-item" href="#">Resources</a>
+          <a class="navbar-item" href="/contact">Contact</a>
         </li>
       </ul>
     </div>

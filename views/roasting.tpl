@@ -1,8 +1,10 @@
 % rebase('layout.tpl', title="Roasting", year=year)
 
+<img class="page-icon" src="/static/images/fire_orange.svg"/>
+
 <article>
-    <img class="page-icon" src="/static/images/fire_orange.svg"/>
     <h1>Roasting</h1>
+    <hr/>
     <h2>Roasting Coffee: A Master Class</h2>
     <p>Are you a coffee lover who wants to learn the art of coffee roasting?
         Look no further! In this article, we’ll take a deep dive into the world
