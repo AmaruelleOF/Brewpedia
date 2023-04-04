@@ -54,7 +54,7 @@
       </div>
     </div>
     </div>
-    <iframe name="frame" href="/history-page" width="1300" height="600">
+    <iframe name="frame" style="width: 100%!important; min-height: 80vh!important; border-radius: 20px; border: 1px solid rgba(0,0,0,.15); padding: 20px;" class="frame-container">
 
     </iframe>
 </div>
