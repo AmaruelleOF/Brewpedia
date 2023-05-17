@@ -28,6 +28,7 @@ def home():
 
 def save_review(data):
     reviews = load_reviews()
+    data['timestamp'] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
     reviews.append(data)
 
     with open('data.json', 'w', encoding='utf-8') as file:
