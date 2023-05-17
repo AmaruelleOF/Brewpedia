@@ -34,6 +34,9 @@
           <li class="nav-item">
           <a class="navbar-item" href="/reviews">Reviews</a>
         </li>
+        <li class="nav-item">
+            <a class="navbar-item" href="/pending_orders">Pending Orders</a>
+        </li>
       </ul>
     </div>
   </div>

@@ -1,4 +1,6 @@
-from bottle import route, view
+import json
+
+from bottle import route, view, request, template, redirect
 from datetime import datetime
 
 from myform import load_reviews
@@ -12,6 +14,7 @@ def home():
         year=datetime.now().year
     )
 
+
 @route('/contact')
 @view('contact')
 def contact():
@@ -19,6 +22,7 @@ def contact():
         title='Contact',
         year=datetime.now().year
     )
+
 
 @route('/about')
 @view('about')
@@ -119,10 +123,47 @@ def roasting():
     )
 
 
+def load_orders():
+    with open('orders.json', 'r') as file:
+        return json.load(file)
+
+
+def save_orders(orders):
+    with open('orders.json', 'w') as file:
+        json.dump(orders, file)
+
+
+@route('/pending_orders')
+def pending_orders():
+    orders = load_orders()
+    return template('pending_orders', orders=orders)
+
+
+@route('/add_order', method='POST')
+def add_order():
+    username = request.forms.get('username')
+    deadline = request.forms.get('deadline')
+    description = request.forms.get('description')
+    phone = request.forms.get('phone')
+
+    new_order = {
+        'username': username,
+        'deadline': deadline,
+        'description': description,
+        'phone': phone
+    }
+
+    orders = load_orders()
+    orders.append(new_order)
+    save_orders(orders)
+
+    redirect('/pending_orders')
+
+
 @route('/reviews')
 @view('reviews')
 def roasting():
     return dict(
         title="reviews",
-        year=datetime.now().year, reviews = load_reviews()
+        year=datetime.now().year, reviews=load_reviews()
     )
