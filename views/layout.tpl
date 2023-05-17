@@ -31,6 +31,9 @@
           <li class="nav-item">
           <a class="navbar-item" href="/contact">Contact</a>
         </li>
+          <li class="nav-item">
+          <a class="navbar-item" href="/reviews">Reviews</a>
+        </li>
       </ul>
     </div>
   </div>

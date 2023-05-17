@@ -1,6 +1,9 @@
 from bottle import route, view
 from datetime import datetime
 
+from myform import load_reviews
+
+
 @route('/')
 @route('/home')
 @view('index')
@@ -113,4 +116,13 @@ def roasting():
     return dict(
         title="coffee-and-health",
         year=datetime.now().year
+    )
+
+
+@route('/reviews')
+@view('reviews')
+def roasting():
+    return dict(
+        title="reviews",
+        year=datetime.now().year, reviews = load_reviews()
     )
