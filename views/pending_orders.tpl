@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+% rebase('layout.tpl', title='Pending Orders', year=2023)
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
