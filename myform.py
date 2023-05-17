@@ -8,16 +8,22 @@ import pdb
 app = Bottle()
 
 
+def is_valid_phone_number(phone_number):
+    pattern = r"^(?:\+\d{1,3})?(?:\s?\(\d{3}\)\s?|\d{3}(?:-|\s)?)\d{3}(?:-|\s)?\d{4}$"
+    return re.match(pattern, phone_number) is not None
+
+
 @bottle.post('/home', method='POST')
 def home():
     name = request.forms.get('name')
-    email = request.forms.get('email')
+    phone = request.forms.get('phone')
     review = request.forms.get('review')
 
     data = {
         'name': name,
-        'email': email,
-        'review': review
+        'phone': phone,
+        'review': review,
+        'timestamp': datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
     }
 
     save_review(data)

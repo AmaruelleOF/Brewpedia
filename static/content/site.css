@@ -1,6 +1,7 @@
 body {
     font-family: 'Georgia', serif!important;
     background-color: #FFF7F2!important;
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -277,4 +278,15 @@ border: 1px solid #ccc;
 
 .review-details p:last-child {
   font-size: 25px; /* Adjust the font size for the review text */
+}
+
+.my-4 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  font-size: 35px;
+}
+
+.space {
+    margin: 0;
+    padding: 20px;
 }
