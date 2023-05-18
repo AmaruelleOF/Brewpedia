@@ -31,6 +31,15 @@
           <li class="nav-item">
           <a class="navbar-item" href="/contact">Contact</a>
         </li>
+          <li class="nav-item">
+          <a class="navbar-item" href="/reviews">Reviews</a>
+        </li>
+        <li class="nav-item">
+            <a class="navbar-item" href="/pending_orders">Pending Orders</a>
+        </li>
+        <li class="nav-item">
+            <a class="navbar-item" href="/active_users">Active Users</a>
+        </li>
       </ul>
     </div>
   </div>

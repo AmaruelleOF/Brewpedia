@@ -1,6 +1,7 @@
 body {
     font-family: 'Georgia', serif!important;
     background-color: #FFF7F2!important;
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -192,4 +193,100 @@ li {
 .frame-container {
     width: 100%;
     height: 100%;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.review-card {
+border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.review-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 50px; /* Adjust the width as desired */
+  height: 50px; /* Adjust the height as desired */
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+  margin-right: 10px; /* Add some spacing between the avatar and the name */
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Add some spacing between avatar-container and review-details */
+}
+
+.review-details {
+  color: black; /* Set the color of the review-details text to gray */
+}
+
+.review-details p {
+  margin: 0; /* Remove default margin for paragraphs within review-details */
+}
+
+.review-details .email {
+  color: gray; /* Set the color of the email text to gray */
+}
+
+.review-details p:last-child {
+  font-size: 25px; /* Adjust the font size for the review text */
+}
+
+.my-4 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  font-size: 35px;
+}
+
+.space {
+    margin: 0;
+    padding: 20px;
 }

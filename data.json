@@ -1,0 +1,50 @@
+[
+    {
+        "name": "HappiestMan",
+        "phone": "+79089795138",
+        "review": "The best site I've ever seen",
+        "timestamp": "2023-05-17 19:17"
+    },
+    {
+        "name": "dd",
+        "phone": "+79089795138",
+        "review": "QWERTY",
+        "timestamp": "2023-05-17 19:17"
+    },
+    {
+        "name": "Mommy",
+        "phone": "+79089795138",
+        "review": "Test1",
+        "timestamp": "2023-05-17 19:16"
+    },
+    {
+        "name": "Tester",
+        "phone": "+79089795138",
+        "review": "Test2",
+        "timestamp": "2023-05-17 19:17"
+    },
+    {
+        "name": "Toaster",
+        "phone": "+79089795138",
+        "review": "Test3",
+        "timestamp": "2023-05-17 19:49"
+    },
+    {
+        "name": "NuclearToaster",
+        "phone": "+79089771811",
+        "review": "Good Job!",
+        "timestamp": "2023-05-17 19:51"
+    },
+    {
+        "name": "TrustMePLS",
+        "phone": "+79089771811",
+        "review": "Brewpedia is an exceptional coffee website that has truly captivated me with its stunning design. As a coffee enthusiast, I've explored various online platforms dedicated to this beloved beverage, but Brewpedia stands out from the rest with its impeccable aesthetics and user-friendly interface.",
+        "timestamp": "2023-05-17 19:53"
+    },
+    {
+        "name": "Toaster2132",
+        "phone": "+79089795138",
+        "review": "Klass",
+        "timestamp": "2023-05-17 20:11"
+    }
+]
