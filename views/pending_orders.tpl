@@ -1,15 +1,9 @@
 % rebase('layout.tpl', title='Pending Orders', year=2023)
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <title>Pending Orders</title>
-</head>
 <body class="container py-4">
+<article>
     <h1 class="mb-4">Pending Orders</h1>
+    <hr/>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -32,6 +26,7 @@
     </table>
 
     <h2 class="my-4">Add New Order</h2>
+    <hr/>
     <form action="/add_order" method="post">
         <div class="mb-3">
             <label for="username" class="form-label">Username:</label>
@@ -50,7 +45,7 @@
             <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             <small class="form-text">Format: 123-456-7890</small>
         </div>
-        <input type="submit" class="btn btn-primary" value="Add Order">
+        <input type="submit" class="btn btn-warning" value="Add Order">
     </form>
 </body>
-</html>
+</article>
