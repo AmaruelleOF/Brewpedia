@@ -1,11 +1,9 @@
-import json
-
+import json, users
 from bottle import route, view, request, template, redirect
-from datetime import datetime
-from regex import match, regex
 from orders import *
 from myform import load_reviews
 from datetime import *
+
 
 @route('/')
 @route('/home')
@@ -184,36 +182,46 @@ def roasting():
     )
 
 
-# Static fake data
-active_users = [
-    {
-        'username': 'user1',
-        'date_registered': '2021-09-01',
-        'last_active': '2021-09-30'
-    },
-    {
-        'username': 'user2',
-        'date_registered': '2021-09-05',
-        'last_active': '2021-09-28'
-    },
-]
+def load_users():
+    with open('users.json', 'r') as file:
+        return json.load(file)
+
+
+def save_users(users):
+    with open('users.json', 'w') as file:
+        json.dump(users, file)
+
+
+active_users = load_users()
 
 
 @route('/active_users')
 def index():
+    global active_users
+    active_users = load_users()
     return template('active_users', users=active_users)
 
 
 @route('/add_user', method='POST')
 def add_user():
+    global active_users
+    active_users = load_users()
     username = request.forms.get('username')
     date_registered = request.forms.get('date_registered')
     last_active = request.forms.get('last_active')
 
+    if not users.name(username):
+        return {'status': 'Invalid username'}
+
+    if not users.date(date_registered) or not users.date(last_active):
+        return {'status': 'Invalid date'}
+    if datetime.strptime(date_registered, "%Y-%m-%d") > datetime.strptime(last_active, "%Y-%m-%d"):
+        return {'status': 'You can\'t do that'}
     active_users.append({
         'username': username,
         'date_registered': date_registered,
         'last_active': last_active
     })
 
+    save_users(active_users)
     return template('active_users', users=active_users)
