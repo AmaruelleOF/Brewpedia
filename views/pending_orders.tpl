@@ -42,10 +42,34 @@
         </div>
         <div class="mb-3">
             <label for="phone" class="form-label">Phone:</label>
-            <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
             <small class="form-text">Format: 123-456-7890</small>
         </div>
+        <p id="user-check" style="color: red"></p>
         <input type="submit" class="btn btn-warning" value="Add Order">
     </form>
+    </article>
 </body>
-</article>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+      $('form').on('submit', function(event) {
+        event.preventDefault();
+          let phone = $('#phone').val();
+          let username = $('#username').val();
+          let description = $('#description').val();
+          let deadline = $('#deadline').val();
+          $.ajax({
+          url: '/add_order',
+          data: {'username': username, 'phone': phone, 'description': description, 'deadline': deadline},
+          type: 'POST',
+          success: function(response) {
+            $('#user-check').text(response.status);
+          },
+          error: function(error) {
+            console.log(error);
+          }
+        });
+      });
+    });
+</script>

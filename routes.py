@@ -2,9 +2,10 @@ import json
 
 from bottle import route, view, request, template, redirect
 from datetime import datetime
-
+from regex import match, regex
+from orders import *
 from myform import load_reviews
-
+from datetime import *
 
 @route('/')
 @route('/home')
@@ -141,11 +142,23 @@ def pending_orders():
 
 @route('/add_order', method='POST')
 def add_order():
+    # Получаем данные из формы
     username = request.forms.get('username')
     deadline = request.forms.get('deadline')
     description = request.forms.get('description')
     phone = request.forms.get('phone')
 
+    # Несколько проверок на разные поля
+    if not check_name(username):
+        return {'status': 'Invalid username'}
+
+    if not check_phone(phone):
+        return {'status': 'Invalid phone'}
+
+    if not check_date(deadline):
+        return {'status': 'Invalid deadline'}
+
+    # Если все хорошо - формируем новый заказ
     new_order = {
         'username': username,
         'deadline': deadline,
@@ -153,11 +166,13 @@ def add_order():
         'phone': phone
     }
 
+    # Добавление и запись в файл
     orders = load_orders()
     orders.append(new_order)
     save_orders(orders)
 
     redirect('/pending_orders')
+    return {'status': 'All ok'}
 
 
 @route('/reviews')
